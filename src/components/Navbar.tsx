@@ -1,8 +1,7 @@
 import { useState } from 'react'; // 1. Import useState
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false); // 2. Add state
-
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="bg-surface dark:bg-primary-container text-primary">
       <nav className="flex justify-between items-center w-full px-6 py-4">
