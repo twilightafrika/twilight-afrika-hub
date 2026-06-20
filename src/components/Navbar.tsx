@@ -29,11 +29,12 @@ export default function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden absolute top-20 left-0 w-full bg-white border-t p-4 flex flex-col gap-4 shadow-lg">
-          <a href="#about" onClick={() => setIsOpen(false)}>About</a>
-          <a href="#services" onClick={() => setIsOpen(false)}>Services</a>
-          <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
+        <div className="absolute top-20 left-0 w-full bg-white border-b shadow-xl p-6 flex flex-col gap-4 z-50">
+          <a href="#about" onClick={() => setIsOpen(false)} className="text-gray-700 text-lg">About</a>
+          <a href="#services" onClick={() => setIsOpen(false)} className="text-gray-700 text-lg">Services</a>
+          <a href="#contact" onClick={() => setIsOpen(false)} className="text-gray-700 text-lg">Contact</a>
         </div>
+      )}
       )}
     </header>
   );
