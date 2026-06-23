@@ -1,7 +1,10 @@
-import { useState } from 'react'; // 1. Import useState
+"use client";
+
+import { useState } from 'react';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="bg-surface dark:bg-primary-container text-primary">
       <nav className="flex justify-between items-center w-full px-6 py-4">
@@ -33,7 +36,6 @@ export default function Navbar() {
           <a href="#services" onClick={() => setIsOpen(false)} className="text-gray-700 text-lg">Services</a>
           <a href="#contact" onClick={() => setIsOpen(false)} className="text-gray-700 text-lg">Contact</a>
         </div>
-      )}
       )}
     </header>
   );
